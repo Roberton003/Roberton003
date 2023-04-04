@@ -1,10 +1,11 @@
-### Espero que estejam bem! Sou o Roberto Nascimento ✌️ 
+# Espero que estejam bem! Sou o Roberto Nascimento ✌️ 
 
 [![Linkdln](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)
 
-![Rob3rton003 GitHub stats](https://github-readme-stats.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight)
+![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight)
 #
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Roberton003&hide_progress=true)
+<a href=""> <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&theme=react&line_height=40&hide=css"/> </a>
+
 ## Tecnologias que estudo e tenho projetos
 
 <div style="display: inline_block"><br/>
