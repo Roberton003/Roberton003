@@ -1,10 +1,14 @@
 # Espero que estejam bem! Sou o Roberto Nascimento ✌️ 
+[![Linkedin Badge](https://img.shields.io/badge/-Roberton003-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)](https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)
+[![Selo do Gmail](https://img.shields.io/badge/-roberto.m0010@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:roberto.m0010@gmail.com)](mailto:roberto.m0010@gmail.com)
 
-[![Linkdln](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)
 
-## Tecnologias que estudo e tenho projetos
+##
+- 🌱 **Atualmente estou aprendendo as tecnologias DevOps e Cloud**
 
+### **Linguagens e Ferramentas:**
 <div style="display: inline_block"><br/>
+ 
 <img align="center" alt="html5" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
 <img align="center" alt="html5" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/>
 <img align="center" alt="html5" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -23,10 +27,13 @@
 </div>
 <div style="display: inline_block"><br/>
   
-![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight)
-  
+![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight) 
 </div>
-<a href=""> <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&theme=react&line_height=40&hide=css"/> </a>
+
+[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=Roberton003&repo=github-readme-stats)](https://github.com/Roberton003/github-readme-stats)
+
+![Obrigado](https://img.shields.io/badge/🙏Obrigado_por_passar_um_momento_no_meu_perfil,_grato!-dodgerred.svg?style=for-the-badge)
+
 
 
 
