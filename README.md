@@ -21,5 +21,5 @@
 <img align="center" alt="html5" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
 
 </div>
-  
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Roberton003&hide_progress=true)](https://github.com/Roberton003/github-readme-stats)
   
