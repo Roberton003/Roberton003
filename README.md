@@ -30,7 +30,7 @@
 ![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight) 
 </div>
 
-[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=Roberton003&repo=github-readme-stats)](https://github.com/Roberton003/github-readme-stats)
+![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&layout=compact)
 
 ![Obrigado](https://img.shields.io/badge/🙏Obrigado_por_passar_um_momento_no_meu_perfil,_grato!-dodgerred.svg?style=for-the-badge)
 
