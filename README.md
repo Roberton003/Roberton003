@@ -1,38 +1,64 @@
-# Espero que estejam bem! Sou o Roberto Nascimento8
-[![Linkedin Badge](https://img.shields.io/badge/-Roberton003-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)](https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)
-[![Selo do Gmail](https://img.shields.io/badge/-roberto.m0010@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:roberto.m0010@gmail.com)](mailto:roberto.m0010@gmail.com)
+# 👋 Olá, eu sou o Roberto Nascimento8  
 
+[![Linkedin Badge](https://img.shields.io/badge/-Roberton003-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/robertonascimento8/)](https://www.linkedin.com/in/robertonascimento8/)  
+[![Selo do Gmail](https://img.shields.io/badge/-roberto.m0010@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:roberto.m0010@gmail.com)](mailto:roberto.m0010@gmail.com)  
 
-##
-- 🌱 **Atualmente estou aprendendo as tecnologias DevOps e Cloud**
+---
 
-### **Linguagens e Ferramentas:**
-<div style="display: inline_block"><br/>
- 
-<img align="center" alt="html5" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/>
-</div>
-<div style="display: inline_block"><br/> 
-<img align="center" alt="html5" src="https://img.shields.io/badge/Ansible-000000?style=for-the-badge&logo=ansible&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
-<img align="center" alt="html5" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
-</div>
+## 🚀 Sobre mim  
+
+Sou **Engenheiro de Dados** formado em **Ciência da Computação** com MBA em **Engenharia de Software**.  
+Minha trajetória une **experiência em processos industriais complexos** e **tecnologia de dados**, sempre com o objetivo de transformar informação em valor real para as empresas.  
+
+📌 Acredito que engenharia de dados vai além de escrever código: trata-se de **resolver problemas reais, gerar insights e criar soluções escaláveis** que apoiam a tomada de decisão.  
+
+---
+
+## 🔑 O que me diferencia  
+- 🎯 **Foco em resultados**: transformar dados brutos em pipelines confiáveis e prontos para análise.  
+- 🤝 **Colaboração**: gosto de aprender, compartilhar e crescer junto com o time.  
+- 🛠️ **Versatilidade**: já atuei em ambientes críticos (química, processos industriais e análises laboratoriais), o que me deu disciplina, visão analítica e atenção à qualidade.  
+
+---
+
+## 🛠️ Tecnologias e Ferramentas  
+
+**Linguagens e Processamento**  
+- Python, SQL, ETL, Go  
+
+**Cloud & Big Data**  
+- Google Cloud (BigQuery, Dataproc)  
+- Amazon AWS (EC2, S3, Kinesis, EMR, Snow Family)  
+- Databricks  
+
+**DevOps & Infraestrutura**  
+- Docker, Kubernetes, Terraform, Ansible  
+- Linux, Git/GitHub, VS Code  
+
+---
+
+## 🎓 Certificações e Formação  
+- **Elastic Google Cloud Infrastructure: Scaling and Automation**  
+- **Google Cloud Fundamentals: Core Infrastructure**  
+- **Técnicas Avançadas de Python**  
+- **DevOps & Cloud (Linux, Docker, Kubernetes, AWS)**  
+- Bacharelado em **Ciência da Computação**  
+- MBA em **Engenharia de Software**  
+
+---
+
+## 📊 Estatísticas do GitHub  
+
 <div style="display: inline_block"><br/>
   
 ![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight) 
-</div>
+</div>  
 
-![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&layout=compact)
+![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&layout=compact)  
 
-![Obrigado](https://img.shields.io/badge/🙏Obrigado_por_passar_um_momento_no_meu_perfil,_grato!-dodgerred.svg?style=for-the-badge)
+---
+
+![Obrigado](https://img.shields.io/badge/🙏Obrigado_por_passar_um_momento_no_meu_perfil,_grato!-dodgerred.svg?style=for-the-badge)  
 
 
 
