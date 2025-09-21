@@ -1,4 +1,4 @@
-# Espero que estejam bem! Sou o Roberto Nascimento8 ✌️ 
+# Espero que estejam bem! Sou o Roberto Nascimento8
 [![Linkedin Badge](https://img.shields.io/badge/-Roberton003-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)](https://www.linkedin.com/in/roberto-nascimento-python-devops-cloud/)
 [![Selo do Gmail](https://img.shields.io/badge/-roberto.m0010@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:roberto.m0010@gmail.com)](mailto:roberto.m0010@gmail.com)
 
