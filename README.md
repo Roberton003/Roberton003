@@ -3,8 +3,9 @@
 ### Engenheiro de Dados Industriais & Automação (OT/IT)
 *Unindo a robustez do chão de fábrica (SCADA/Sistemas de Processo) com a escalabilidade da TI Moderna (Python, SQL, Airflow, Docker)*
 
-[![Linkedin Badge](https://img.shields.io/badge/-Roberton003-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/robertoonaascimento8/)](https://www.linkedin.com/in/robertoonaascimento8/)  
-[![Selo do Gmail](https://img.shields.io/badge/-roberto.m0010@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:roberto.m0010@gmail.com)](mailto:roberto.m0010@gmail.com)  
+[![GitHub](https://img.shields.io/badge/GitHub-Roberton003-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Roberton003)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-R.%20Martins%20Nàscimento-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/robertoonaascimento8/)  
+[![Gmail](https://img.shields.io/badge/Gmail-roberto.m0010@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:roberto.m0010@gmail.com)  
 
 ---
 
