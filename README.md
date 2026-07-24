@@ -56,6 +56,13 @@ No chão de fábrica, aprendi que a qualidade do dado na origem é crítica: um 
 
 ---
 
+## 📝 Notas Técnicas
+
+### 🧩 [A Regra Que Falhou Pra Exatamente Um Agente](https://claude.ai/code/artifact/72419aed-43d5-4331-a4e1-e90cef633357)
+*Case study de debugging: uma regra de compliance falhava silenciosamente pra um agente específico entre quatro — a causa raiz não estava no agente nem na regra, mas num componente compartilhado carregado condicionalmente só naquele caminho.*
+
+---
+
 ## 🎓 Certificações e Formação  
 - Bacharelado em **Ciência da Computação**  
 - MBA em **Engenharia de Software**  
