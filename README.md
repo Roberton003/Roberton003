@@ -7,6 +7,10 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-R.%20Martins%20Nàscimento-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/robertoonaascimento8/)  
 [![Gmail](https://img.shields.io/badge/Gmail-roberto.m0010@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:roberto.m0010@gmail.com)  
 
+<p align="center">
+  <img src="docs/images/profile-hero.svg" alt="Industrial Data Analytics &amp; Analytics Engineer Cockpit" width="100%">
+</p>
+
 ---
 
 ## ⚡ Sobre Mim

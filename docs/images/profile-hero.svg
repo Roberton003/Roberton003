@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%" role="img" aria-labelledby="title desc">
+  <title id="title">Analista de Dados Industriais &amp; Analytics Engineer - Command Cockpit</title>
+  <desc id="desc">Cockpit de telemetria industrial SCADA, governança de qualidade de dados e KPIs executivos em tons dourados de presença e liderança.</desc>
+  
+  <defs>
+    <!-- Gradientes Dourados (Liderança e Presença) -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b26" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0d111a" stop-opacity="0.98" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#78350f" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.4" />
+    </linearGradient>
+    
+    <!-- Filtro de Brilho Dourado -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    :root {
+      --bg: #090d14;
+      --card-bg: #111622;
+      --gold-bright: #fbbf24;
+      --gold-main: #f59e0b;
+      --gold-dark: #b45309;
+      --text-white: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-gold: #fde68a;
+      --green-ok: #10b981;
+      --cyan-tech: #38bdf8;
+    }
+    
+    * { transform-box: fill-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    
+    /* Animações */
+    @keyframes pulseLive {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    
+    @keyframes scanWave {
+      0% { transform: translateX(-100px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(200px); opacity: 0; }
+    }
+    
+    @keyframes radarSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes ringFill {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 80; }
+    }
+    
+    @keyframes itemFade {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; }
+    }
+    
+    .live-dot { animation: pulseLive 2s ease-in-out infinite; }
+    .scan-line { animation: scanWave 3s ease-in-out infinite; }
+    .radar-beam { animation: radarSpin 4s linear infinite; transform-origin: center; }
+    .oee-ring { stroke-dasharray: 400; stroke-dashoffset: 400; animation: ringFill 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .card-pulse { animation: itemFade 4s ease-in-out infinite; }
+    
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <!-- Fundo Principal com Borda Dourada Suave -->
+  <rect width="840" height="320" rx="16" fill="var(--bg)"/>
+  <rect x="1" y="1" width="838" height="318" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Barra Superior de Status (Cockpit Header) -->
+  <g transform="translate(24, 18)">
+    <!-- Status Indicator -->
+    <circle cx="6" cy="6" r="4" fill="var(--green-ok)" class="live-dot"/>
+    <text x="18" y="9" font-size="11" font-weight="700" fill="var(--gold-bright)" letter-spacing="1">OT/IT COMMAND COCKPIT</text>
+    <text x="210" y="9" font-size="11" fill="var(--text-muted)">•</text>
+    <text x="225" y="9" font-size="11" fill="var(--text-muted)">SCADA &amp; PROCESS TELEMETRY</text>
+    <text x="420" y="9" font-size="11" fill="var(--text-muted)">•</text>
+    <text x="435" y="9" font-size="11" fill="var(--text-gold)">QUALITY CONTRACTS ACTIVE</text>
+    
+    <!-- Tag Lateral -->
+    <rect x="700" y="-3" width="92" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="746" y="10" font-size="9" font-weight="700" fill="#fde68a" text-anchor="middle">LEADERSHIP TIER</text>
+  </g>
+
+  <!-- ==================== CARD 1: TELEMETRIA INDUSTRIAL (OT) ==================== -->
+  <g transform="translate(24, 42)">
+    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+    
+    <!-- Header do Card -->
+    <path d="M16 20 L24 20 M20 16 L20 24" stroke="var(--gold-main)" stroke-width="2"/>
+    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">TELEMETRIA SCADA</text>
+    <text x="32" y="37" font-size="10" fill="var(--text-muted)">Sinais OT em Tempo Real</text>
+    
+    <!-- Display de Onda Senoidal de Telemetria -->
+    <g transform="translate(16, 50)">
+      <rect width="218" height="68" rx="8" fill="#0b0f17" stroke="#1e293b" stroke-width="1"/>
+      
+      <!-- Grade de Fundo -->
+      <line x1="0" y1="34" x2="218" y2="34" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="54" y1="0" x2="54" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="109" y1="0" x2="109" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="163" y1="0" x2="163" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
+
+      <!-- Onda de Dados Físico-Químicos -->
+      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" filter="url(#glow)"/>
+      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="#fff" stroke-width="1" opacity="0.8"/>
+      
+      <!-- Scanner Laser -->
+      <line x1="20" y1="5" x2="20" y2="63" stroke="#fef08a" stroke-width="1.5" class="scan-line" opacity="0.8"/>
+    </g>
+
+    <!-- Indicadores de Sensores em Campo -->
+    <g transform="translate(16, 130)">
+      <!-- Sensor 1: pH -->
+      <rect x="0" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
+      <text x="8" y="14" font-size="9" fill="var(--text-muted)">pH Flotador</text>
+      <text x="8" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">7.24 <tspan font-size="8" font-weight="400" fill="var(--green-ok)">OK</tspan></text>
+
+      <!-- Sensor 2: Turbidez -->
+      <rect x="75" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
+      <text x="83" y="14" font-size="9" fill="var(--text-muted)">Turbidez</text>
+      <text x="83" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">0.82 <tspan font-size="8" font-weight="400" fill="var(--text-muted)">NTU</tspan></text>
+
+      <!-- Sensor 3: Vazão -->
+      <rect x="150" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
+      <text x="158" y="14" font-size="9" fill="var(--text-muted)">Vazão ETA</text>
+      <text x="158" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">418 <tspan font-size="8" font-weight="400" fill="var(--text-muted)">m³/h</tspan></text>
+    </g>
+
+    <!-- Rodapé Card 1 -->
+    <text x="16" y="194" font-size="9.5" fill="var(--text-muted)">Protocolos: <tspan fill="var(--text-gold)">Modbus TCP • OPC-UA • 3.7Hz</tspan></text>
+  </g>
+
+  <!-- ==================== CARD 2: DATA QUALITY & GOVERNANÇA ==================== -->
+  <g transform="translate(295, 42)">
+    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+    
+    <!-- Header do Card -->
+    <path d="M16 18 L24 22 L20 26 Z" fill="var(--gold-main)"/>
+    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">DATA QUALITY ENGINE</text>
+    <text x="32" y="37" font-size="10" fill="var(--text-muted)">Contratos de Dados &amp; Idempotência</text>
+    
+    <!-- Checklist de Rigor Técnico -->
+    <g transform="translate(16, 52)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="16" cy="15" r="7" fill="#065f46" />
+        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
+        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Schema Contracts</text>
+        <text x="175" y="19" font-size="9" font-weight="700" fill="var(--green-ok)">ENFORCED</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 36)">
+        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="16" cy="15" r="7" fill="#065f46" />
+        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
+        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Sensor Drift / Anomalia</text>
+        <text x="178" y="19" font-size="9" font-weight="700" fill="var(--green-ok)">ISOLATED</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 72)">
+        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="16" cy="15" r="7" fill="#065f46" />
+        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
+        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Idempotent Replay</text>
+        <text x="174" y="19" font-size="9" font-weight="700" fill="var(--gold-bright)">100% PASS</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 108)">
+        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="16" cy="15" r="7" fill="#78350f" />
+        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Medallion Lakehouse</text>
+        <text x="160" y="19" font-size="9" font-weight="700" fill="var(--gold-bright)">BRZ➔SLV➔GLD</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 3: DECISÃO & KPIS EXECUTIVOS ==================== -->
+  <g transform="translate(566, 42)">
+    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+    
+    <!-- Header do Card -->
+    <circle cx="20" cy="20" r="4" fill="var(--gold-bright)"/>
+    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">ANALYTICS &amp; DECISÃO</text>
+    <text x="32" y="37" font-size="10" fill="var(--text-muted)">KPIs Operacionais de Alto Impacto</text>
+    
+    <!-- Gauge Circular OEE Dourado -->
+    <g transform="translate(125, 108)">
+      <!-- Trilha de fundo -->
+      <circle r="46" fill="none" stroke="#1e293b" stroke-width="9"/>
+      
+      <!-- Anel Dourado Animado -->
+      <circle class="oee-ring" r="46" fill="none" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round" transform="rotate(-90)" filter="url(#glow)"/>
+      
+      <!-- Texto Central -->
+      <text x="0" y="3" font-size="19" font-weight="800" fill="var(--gold-bright)" text-anchor="middle">94.8%</text>
+      <text x="0" y="17" font-size="8.5" font-weight="600" fill="var(--text-muted)" text-anchor="middle">OEE GLOBAL</text>
+    </g>
+
+    <!-- Mini Cards de Impacto na Operação -->
+    <g transform="translate(16, 162)">
+      <rect x="0" y="0" width="105" height="36" rx="6" fill="#131c2e" stroke="#1e293b" stroke-width="1"/>
+      <text x="8" y="14" font-size="8.5" fill="var(--text-muted)">Tempo Detecção</text>
+      <text x="8" y="28" font-size="11.5" font-weight="700" fill="#38bdf8">4h ➔ 15min</text>
+
+      <rect x="113" y="0" width="105" height="36" rx="6" fill="#131c2e" stroke="#1e293b" stroke-width="1"/>
+      <text x="121" y="14" font-size="8.5" fill="var(--text-muted)">Data Reliability</text>
+      <text x="121" y="28" font-size="11.5" font-weight="700" fill="var(--green-ok)">99.98%</text>
+    </g>
+  </g>
+
+  <!-- ==================== BARRA INFERIOR: STACK & CAPACIDADES ==================== -->
+  <g transform="translate(24, 262)">
+    <rect width="792" height="42" rx="8" fill="#0b0f17" stroke="url(#borderGrad)" stroke-width="1"/>
+    
+    <text x="16" y="25" font-size="11" font-weight="700" fill="var(--gold-bright)">TECH STACK:</text>
+    
+    <g transform="translate(105, 12)">
+      <!-- Tags Tecnológicas em Pílulas -->
+      <g transform="translate(0, 0)">
+        <rect width="72" height="20" rx="4" fill="#1e293b" />
+        <text x="36" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">SCADA/SDCD</text>
+      </g>
+      <g transform="translate(78, 0)">
+        <rect width="52" height="20" rx="4" fill="#1e293b" />
+        <text x="26" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Python</text>
+      </g>
+      <g transform="translate(136, 0)">
+        <rect width="38" height="20" rx="4" fill="#1e293b" />
+        <text x="19" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">SQL</text>
+      </g>
+      <g transform="translate(180, 0)">
+        <rect width="36" height="20" rx="4" fill="#1e293b" />
+        <text x="18" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">dbt</text>
+      </g>
+      <g transform="translate(222, 0)">
+        <rect width="54" height="20" rx="4" fill="#1e293b" />
+        <text x="27" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Dagster</text>
+      </g>
+      <g transform="translate(282, 0)">
+        <rect width="56" height="20" rx="4" fill="#1e293b" />
+        <text x="28" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">DuckDB</text>
+      </g>
+      <g transform="translate(344, 0)">
+        <rect width="54" height="20" rx="4" fill="#1e293b" />
+        <text x="27" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Parquet</text>
+      </g>
+      <g transform="translate(404, 0)">
+        <rect width="50" height="20" rx="4" fill="#1e293b" />
+        <text x="25" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Docker</text>
+      </g>
+      <g transform="translate(460, 0)">
+        <rect width="64" height="20" rx="4" fill="#78350f" fill-opacity="0.6" stroke="#f59e0b" stroke-width="0.8"/>
+        <text x="32" y="14" font-size="9.5" font-weight="700" fill="#fde68a" text-anchor="middle">Power BI</text>
+      </g>
+      <g transform="translate(530, 0)">
+        <rect width="145" height="20" rx="4" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
+        <text x="72" y="14" font-size="9.5" font-weight="600" fill="#94a3b8" text-anchor="middle">Kimball Dimensional Model</text>
+      </g>
+    </g>
+  </g>
+</svg>
