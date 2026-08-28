@@ -66,15 +66,4 @@ No chão de fábrica, aprendi que a qualidade do dado na origem é crítica: um 
 
 ---
 
-## 📊 Estatísticas do GitHub  
-
-<div style="display: inline_block"><br/>
-  
-![Rob3rton003 GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Roberton003&show_icons=true&theme=tokyonight) 
-</div>  
-
-![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Roberton003&layout=compact)  
-
----
-
 ![Obrigado](https://img.shields.io/badge/🙏Obrigado_pela_visita!-181717?style=for-the-badge&logo=github)  
