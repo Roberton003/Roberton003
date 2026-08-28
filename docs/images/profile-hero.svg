@@ -1,44 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%" role="img" aria-labelledby="title desc">
   <title id="title">Analista de Dados Industriais &amp; Analytics Engineer - Command Cockpit</title>
-  <desc id="desc">Cockpit de telemetria industrial SCADA, governança de qualidade de dados e KPIs executivos em tons dourados de presença e liderança.</desc>
+  <desc id="desc">Cockpit de telemetria industrial SCADA, governança de qualidade de dados e KPIs executivos em tons dourados com animação dinâmica.</desc>
   
   <defs>
     <!-- Gradientes Dourados (Liderança e Presença) -->
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="50%" stop-color="#d97706" />
-      <stop offset="100%" stop-color="#b45309" />
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#fbbf24" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
     </linearGradient>
     
     <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.9"/>
       <stop offset="50%" stop-color="#f59e0b" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#d97706" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.9"/>
     </linearGradient>
 
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#161b26" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#0d111a" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#141923" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#090d15" stop-opacity="0.99" />
     </linearGradient>
 
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#78350f" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#78350f" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.5" />
     </linearGradient>
     
-    <!-- Filtro de Brilho Dourado -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Filtros de Brilho Neon (Glow Filter) -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
   </defs>
 
   <style>
     :root {
-      --bg: #090d14;
-      --card-bg: #111622;
-      --gold-bright: #fbbf24;
+      --bg: #070a10;
+      --gold-bright: #fde047;
       --gold-main: #f59e0b;
       --gold-dark: #b45309;
       --text-white: #f8fafc;
@@ -47,246 +58,259 @@
       --green-ok: #10b981;
       --cyan-tech: #38bdf8;
     }
-    
-    * { transform-box: fill-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-    
-    /* Animações */
-    @keyframes pulseLive {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.9); }
-    }
-    
-    @keyframes scanWave {
-      0% { transform: translateX(-100px); opacity: 0; }
-      50% { opacity: 1; }
-      100% { transform: translateX(200px); opacity: 0; }
-    }
-    
-    @keyframes radarSpin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    @keyframes ringFill {
-      0% { stroke-dashoffset: 400; }
-      100% { stroke-dashoffset: 80; }
-    }
-    
-    @keyframes itemFade {
-      0%, 100% { opacity: 0.85; }
-      50% { opacity: 1; }
-    }
-    
-    .live-dot { animation: pulseLive 2s ease-in-out infinite; }
-    .scan-line { animation: scanWave 3s ease-in-out infinite; }
-    .radar-beam { animation: radarSpin 4s linear infinite; transform-origin: center; }
-    .oee-ring { stroke-dasharray: 400; stroke-dashoffset: 400; animation: ringFill 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-    .card-pulse { animation: itemFade 4s ease-in-out infinite; }
-    
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
+    * { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
   </style>
 
   <!-- Fundo Principal com Borda Dourada Suave -->
-  <rect width="840" height="320" rx="16" fill="var(--bg)"/>
+  <rect width="840" height="320" rx="16" fill="#070a10"/>
   <rect x="1" y="1" width="838" height="318" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
 
   <!-- Barra Superior de Status (Cockpit Header) -->
   <g transform="translate(24, 18)">
-    <!-- Status Indicator -->
-    <circle cx="6" cy="6" r="4" fill="var(--green-ok)" class="live-dot"/>
-    <text x="18" y="9" font-size="11" font-weight="700" fill="var(--gold-bright)" letter-spacing="1">OT/IT COMMAND COCKPIT</text>
-    <text x="210" y="9" font-size="11" fill="var(--text-muted)">•</text>
-    <text x="225" y="9" font-size="11" fill="var(--text-muted)">SCADA &amp; PROCESS TELEMETRY</text>
-    <text x="420" y="9" font-size="11" fill="var(--text-muted)">•</text>
-    <text x="435" y="9" font-size="11" fill="var(--text-gold)">QUALITY CONTRACTS ACTIVE</text>
+    <!-- Live Indicator Animado -->
+    <circle cx="6" cy="6" r="4" fill="var(--green-ok)">
+      <animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="6" r="2" fill="#ecfdf5"/>
+
+    <text x="18" y="10" font-size="11" font-weight="800" fill="var(--gold-bright)" letter-spacing="1">OT/IT COMMAND COCKPIT</text>
+    <text x="210" y="10" font-size="11" fill="var(--text-muted)">•</text>
+    <text x="225" y="10" font-size="11" fill="var(--text-muted)">SCADA &amp; PROCESS TELEMETRY</text>
+    <text x="420" y="10" font-size="11" fill="var(--text-muted)">•</text>
+    <text x="435" y="10" font-size="11" fill="var(--text-gold)">QUALITY CONTRACTS ACTIVE</text>
     
-    <!-- Tag Lateral -->
-    <rect x="700" y="-3" width="92" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="746" y="10" font-size="9" font-weight="700" fill="#fde68a" text-anchor="middle">LEADERSHIP TIER</text>
+    <!-- Tag Leadership Tier -->
+    <rect x="696" y="-3" width="96" height="19" rx="4" fill="#78350f" fill-opacity="0.45" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="744" y="10" font-size="9" font-weight="800" fill="#fde68a" text-anchor="middle" letter-spacing="0.5">LEADERSHIP TIER</text>
   </g>
 
   <!-- ==================== CARD 1: TELEMETRIA INDUSTRIAL (OT) ==================== -->
-  <g transform="translate(24, 42)">
-    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+  <g transform="translate(24, 45)">
+    <rect width="250" height="205" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.3" stroke-width="1.2" />
     
-    <!-- Header do Card -->
-    <path d="M16 20 L24 20 M20 16 L20 24" stroke="var(--gold-main)" stroke-width="2"/>
-    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">TELEMETRIA SCADA</text>
-    <text x="32" y="37" font-size="10" fill="var(--text-muted)">Sinais OT em Tempo Real</text>
+    <!-- Header do Card 1 -->
+    <path d="M16 18 L24 18 M20 14 L20 22" stroke="var(--gold-main)" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="32" y="21" font-size="12" font-weight="700" fill="var(--text-white)">TELEMETRIA SCADA</text>
+    <text x="32" y="35" font-size="9.5" fill="var(--text-muted)">Sinais OT em Tempo Real</text>
     
-    <!-- Display de Onda Senoidal de Telemetria -->
-    <g transform="translate(16, 50)">
-      <rect width="218" height="68" rx="8" fill="#0b0f17" stroke="#1e293b" stroke-width="1"/>
+    <!-- Display de Onda Senoidal de Telemetria Animada -->
+    <g transform="translate(16, 46)">
+      <rect width="218" height="68" rx="8" fill="#080c14" stroke="#1e293b" stroke-width="1"/>
       
-      <!-- Grade de Fundo -->
+      <!-- Grade de Fundo Osciloscópio -->
       <line x1="0" y1="34" x2="218" y2="34" stroke="#1e293b" stroke-dasharray="3,3"/>
       <line x1="54" y1="0" x2="54" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
       <line x1="109" y1="0" x2="109" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
       <line x1="163" y1="0" x2="163" y2="68" stroke="#1e293b" stroke-dasharray="3,3"/>
 
-      <!-- Onda de Dados Físico-Químicos -->
-      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" filter="url(#glow)"/>
-      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="#fff" stroke-width="1" opacity="0.8"/>
+      <!-- Onda de Dados Animada (Onda Senoidal Flutuante via SMIL) -->
+      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="url(#goldGlow)" stroke-width="3" filter="url(#glow)">
+        <animate attributeName="d" 
+                 values="M 0 34 Q 27 6, 54 34 T 109 34 T 163 34 T 218 34;
+                         M 0 34 Q 27 42, 54 34 T 109 34 T 163 34 T 218 34;
+                         M 0 34 Q 27 6, 54 34 T 109 34 T 163 34 T 218 34" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
       
-      <!-- Scanner Laser -->
-      <line x1="20" y1="5" x2="20" y2="63" stroke="#fef08a" stroke-width="1.5" class="scan-line" opacity="0.8"/>
+      <path d="M 0 34 Q 27 8, 54 34 T 109 34 T 163 34 T 218 34" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.9">
+        <animate attributeName="d" 
+                 values="M 0 34 Q 27 6, 54 34 T 109 34 T 163 34 T 218 34;
+                         M 0 34 Q 27 42, 54 34 T 109 34 T 163 34 T 218 34;
+                         M 0 34 Q 27 6, 54 34 T 109 34 T 163 34 T 218 34" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Ponto Quente de Sinal Flutuante -->
+      <circle cx="54" cy="34" r="3.5" fill="#fde047" filter="url(#glow)">
+        <animate attributeName="cy" values="6;42;6" dur="4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Scanner Laser Animado Sweep -->
+      <line x1="10" y1="4" x2="10" y2="64" stroke="#fef08a" stroke-width="1.8" filter="url(#glow)" opacity="0.85">
+        <animate attributeName="x1" values="10;208;10" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="10;208;10" dur="3.5s" repeatCount="indefinite"/>
+      </line>
     </g>
 
     <!-- Indicadores de Sensores em Campo -->
-    <g transform="translate(16, 130)">
+    <g transform="translate(16, 124)">
       <!-- Sensor 1: pH -->
-      <rect x="0" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
-      <text x="8" y="14" font-size="9" fill="var(--text-muted)">pH Flotador</text>
-      <text x="8" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">7.24 <tspan font-size="8" font-weight="400" fill="var(--green-ok)">OK</tspan></text>
+      <rect x="0" y="0" width="68" height="34" rx="6" fill="#131926" stroke="#334155" stroke-width="0.8"/>
+      <text x="8" y="13" font-size="8.5" fill="var(--text-muted)">pH Flotador</text>
+      <text x="8" y="27" font-size="11.5" font-weight="700" fill="var(--gold-bright)">7.24 <tspan font-size="8" font-weight="600" fill="var(--green-ok)">OK</tspan></text>
 
       <!-- Sensor 2: Turbidez -->
-      <rect x="75" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
-      <text x="83" y="14" font-size="9" fill="var(--text-muted)">Turbidez</text>
-      <text x="83" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">0.82 <tspan font-size="8" font-weight="400" fill="var(--text-muted)">NTU</tspan></text>
+      <rect x="75" y="0" width="68" height="34" rx="6" fill="#131926" stroke="#334155" stroke-width="0.8"/>
+      <text x="83" y="13" font-size="8.5" fill="var(--text-muted)">Turbidez</text>
+      <text x="83" y="27" font-size="11.5" font-weight="700" fill="var(--gold-bright)">0.82 <tspan font-size="7.5" fill="var(--text-muted)">NTU</tspan></text>
 
       <!-- Sensor 3: Vazão -->
-      <rect x="150" y="0" width="68" height="34" rx="6" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
-      <text x="158" y="14" font-size="9" fill="var(--text-muted)">Vazão ETA</text>
-      <text x="158" y="28" font-size="12" font-weight="700" fill="var(--gold-bright)">418 <tspan font-size="8" font-weight="400" fill="var(--text-muted)">m³/h</tspan></text>
+      <rect x="150" y="0" width="68" height="34" rx="6" fill="#131926" stroke="#334155" stroke-width="0.8"/>
+      <text x="158" y="13" font-size="8.5" fill="var(--text-muted)">Vazão ETA</text>
+      <text x="158" y="27" font-size="11.5" font-weight="700" fill="var(--gold-bright)">418 <tspan font-size="7.5" fill="var(--text-muted)">m³/h</tspan></text>
     </g>
 
     <!-- Rodapé Card 1 -->
-    <text x="16" y="194" font-size="9.5" fill="var(--text-muted)">Protocolos: <tspan fill="var(--text-gold)">Modbus TCP • OPC-UA • 3.7Hz</tspan></text>
+    <text x="16" y="188" font-size="9" fill="var(--text-muted)">Protocolos: <tspan fill="var(--text-gold)" font-weight="600">Modbus TCP • OPC-UA • 3.7Hz</tspan></text>
   </g>
 
   <!-- ==================== CARD 2: DATA QUALITY & GOVERNANÇA ==================== -->
-  <g transform="translate(295, 42)">
-    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+  <g transform="translate(295, 45)">
+    <rect width="250" height="205" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.3" stroke-width="1.2" />
     
-    <!-- Header do Card -->
-    <path d="M16 18 L24 22 L20 26 Z" fill="var(--gold-main)"/>
-    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">DATA QUALITY ENGINE</text>
-    <text x="32" y="37" font-size="10" fill="var(--text-muted)">Contratos de Dados &amp; Idempotência</text>
+    <!-- Header do Card 2 -->
+    <path d="M16 14 L24 18 L20 22 Z" fill="var(--gold-main)"/>
+    <text x="32" y="21" font-size="12" font-weight="700" fill="var(--text-white)">DATA QUALITY ENGINE</text>
+    <text x="32" y="35" font-size="9.5" fill="var(--text-muted)">Contratos de Dados &amp; Idempotência</text>
     
-    <!-- Checklist de Rigor Técnico -->
-    <g transform="translate(16, 52)">
-      <!-- Item 1 -->
+    <!-- Checklist de Rigor Técnico com Animações -->
+    <g transform="translate(16, 46)">
+      <!-- Item 1: Schema Contracts -->
       <g transform="translate(0, 0)">
-        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="16" cy="15" r="7" fill="#065f46" />
-        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
-        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Schema Contracts</text>
-        <text x="175" y="19" font-size="9" font-weight="700" fill="var(--green-ok)">ENFORCED</text>
+        <rect width="218" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="15" cy="14" r="6.5" fill="#065f46" />
+        <path d="M12 14 L14 16 L18 12" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="28" y="18" font-size="10" font-weight="600" fill="var(--text-white)">Schema Contracts</text>
+        <text x="172" y="18" font-size="8.5" font-weight="800" fill="var(--green-ok)">ENFORCED</text>
       </g>
 
-      <!-- Item 2 -->
-      <g transform="translate(0, 36)">
-        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="16" cy="15" r="7" fill="#065f46" />
-        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
-        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Sensor Drift / Anomalia</text>
-        <text x="178" y="19" font-size="9" font-weight="700" fill="var(--green-ok)">ISOLATED</text>
+      <!-- Item 2: Sensor Drift -->
+      <g transform="translate(0, 34)">
+        <rect width="218" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="15" cy="14" r="6.5" fill="#065f46" />
+        <path d="M12 14 L14 16 L18 12" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="28" y="18" font-size="10" font-weight="600" fill="var(--text-white)">Sensor Drift / Anomalia</text>
+        <text x="174" y="18" font-size="8.5" font-weight="800" fill="var(--green-ok)">ISOLATED</text>
       </g>
 
-      <!-- Item 3 -->
-      <g transform="translate(0, 72)">
-        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="16" cy="15" r="7" fill="#065f46" />
-        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#34d399" stroke-width="1.8"/>
-        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Idempotent Replay</text>
-        <text x="174" y="19" font-size="9" font-weight="700" fill="var(--gold-bright)">100% PASS</text>
+      <!-- Item 3: Idempotent Replay -->
+      <g transform="translate(0, 68)">
+        <rect width="218" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="15" cy="14" r="6.5" fill="#065f46" />
+        <path d="M12 14 L14 16 L18 12" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="28" y="18" font-size="10" font-weight="600" fill="var(--text-white)">Idempotent Replay</text>
+        <text x="170" y="18" font-size="8.5" font-weight="800" fill="var(--gold-bright)">100% PASS</text>
       </g>
 
-      <!-- Item 4 -->
-      <g transform="translate(0, 108)">
-        <rect width="218" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="16" cy="15" r="7" fill="#78350f" />
-        <path d="M13 15 L15 17 L19 13" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
-        <text x="30" y="19" font-size="10.5" font-weight="600" fill="var(--text-white)">Medallion Lakehouse</text>
-        <text x="160" y="19" font-size="9" font-weight="700" fill="var(--gold-bright)">BRZ➔SLV➔GLD</text>
+      <!-- Item 4: Medallion Lakehouse -->
+      <g transform="translate(0, 102)">
+        <rect width="218" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="15" cy="14" r="6.5" fill="#78350f" />
+        <path d="M12 14 L14 16 L18 12" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="28" y="18" font-size="10" font-weight="600" fill="var(--text-white)">Medallion Lakehouse</text>
+        <text x="156" y="18" font-size="8.5" font-weight="800" fill="var(--gold-bright)">BRZ➔SLV➔GLD</text>
       </g>
     </g>
+
+    <!-- Linha de Pulso de Conexão de Dados -->
+    <path d="M 32 186 L 218 186" stroke="url(#goldGlow)" stroke-width="1.5" stroke-dasharray="6,4">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="2s" repeatCount="indefinite"/>
+    </path>
   </g>
 
   <!-- ==================== CARD 3: DECISÃO & KPIS EXECUTIVOS ==================== -->
-  <g transform="translate(566, 42)">
-    <rect width="250" height="210" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.25" stroke-width="1" />
+  <g transform="translate(566, 45)">
+    <rect width="250" height="205" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-opacity="0.3" stroke-width="1.2" />
     
-    <!-- Header do Card -->
-    <circle cx="20" cy="20" r="4" fill="var(--gold-bright)"/>
-    <text x="32" y="23" font-size="12" font-weight="700" fill="var(--text-white)">ANALYTICS &amp; DECISÃO</text>
-    <text x="32" y="37" font-size="10" fill="var(--text-muted)">KPIs Operacionais de Alto Impacto</text>
+    <!-- Header do Card 3 (Limpo, sem elementos deslocados) -->
+    <circle cx="20" cy="18" r="4" fill="var(--gold-bright)"/>
+    <text x="32" y="21" font-size="12" font-weight="700" fill="var(--text-white)">ANALYTICS &amp; DECISÃO</text>
+    <text x="32" y="35" font-size="9.5" fill="var(--text-muted)">KPIs Operacionais de Alto Impacto</text>
     
-    <!-- Gauge Circular OEE Dourado -->
-    <g transform="translate(125, 108)">
-      <!-- Trilha de fundo -->
-      <circle r="46" fill="none" stroke="#1e293b" stroke-width="9"/>
+    <!-- GAUGE CIRCULAR OEE DOURADO (PERFEITAMENTE POSICIONADO E ALINHADO NO CENTRO) -->
+    <!-- Grupo do Gauge posicionado exatamente no centro x=125, y=102 dentro do Card 3 -->
+    <g transform="translate(125, 102)">
+      <!-- Trilha de Fundo Cinza -->
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#1e293b" stroke-width="8"/>
       
-      <!-- Anel Dourado Animado -->
-      <circle class="oee-ring" r="46" fill="none" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round" transform="rotate(-90)" filter="url(#glow)"/>
+      <!-- Anel Dourado Progressivo Nativamente Orientado (Começa no topo a 12h: M 0 -44 ...) -->
+      <!-- OEE 94.8% -> Circunferência total = 2*pi*44 = 276.46. Preenchimento 94.8% = 262.08, Offset = 14.38 -->
+      <path d="M 0 -44 A 44 44 0 1 1 -0.01 -44" fill="none" stroke="url(#goldGrad)" stroke-width="8.5" 
+            stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="14.38" filter="url(#glow)"/>
+
+      <!-- Halo Orbitando Externo Animado (Giro de Liderança Dourada) -->
+      <circle cx="0" cy="0" r="51" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,12" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
       
-      <!-- Texto Central -->
-      <text x="0" y="3" font-size="19" font-weight="800" fill="var(--gold-bright)" text-anchor="middle">94.8%</text>
-      <text x="0" y="17" font-size="8.5" font-weight="600" fill="var(--text-muted)" text-anchor="middle">OEE GLOBAL</text>
+      <circle cx="0" cy="0" r="51" fill="none" stroke="#fde047" stroke-width="1.5" stroke-dasharray="2,26" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Texto Central de OEE -->
+      <text x="0" y="4" font-size="18" font-weight="800" fill="var(--gold-bright)" text-anchor="middle" filter="url(#softGlow)">94.8%</text>
+      <text x="0" y="18" font-size="8" font-weight="700" fill="var(--text-gold)" text-anchor="middle" letter-spacing="0.5">OEE GLOBAL</text>
     </g>
 
-    <!-- Mini Cards de Impacto na Operação -->
-    <g transform="translate(16, 162)">
-      <rect x="0" y="0" width="105" height="36" rx="6" fill="#131c2e" stroke="#1e293b" stroke-width="1"/>
-      <text x="8" y="14" font-size="8.5" fill="var(--text-muted)">Tempo Detecção</text>
-      <text x="8" y="28" font-size="11.5" font-weight="700" fill="#38bdf8">4h ➔ 15min</text>
+    <!-- Mini Cards de Impacto Operacional -->
+    <g transform="translate(16, 156)">
+      <rect x="0" y="0" width="104" height="34" rx="6" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+      <text x="8" y="13" font-size="8" fill="var(--text-muted)">Tempo Detecção</text>
+      <text x="8" y="26" font-size="11" font-weight="700" fill="var(--cyan-tech)">4h ➔ 15min</text>
 
-      <rect x="113" y="0" width="105" height="36" rx="6" fill="#131c2e" stroke="#1e293b" stroke-width="1"/>
-      <text x="121" y="14" font-size="8.5" fill="var(--text-muted)">Data Reliability</text>
-      <text x="121" y="28" font-size="11.5" font-weight="700" fill="var(--green-ok)">99.98%</text>
+      <rect x="114" y="0" width="104" height="34" rx="6" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+      <text x="122" y="13" font-size="8" fill="var(--text-muted)">Data Reliability</text>
+      <text x="122" y="26" font-size="11" font-weight="700" fill="var(--green-ok)">99.98%</text>
     </g>
   </g>
 
   <!-- ==================== BARRA INFERIOR: STACK & CAPACIDADES ==================== -->
   <g transform="translate(24, 262)">
-    <rect width="792" height="42" rx="8" fill="#0b0f17" stroke="url(#borderGrad)" stroke-width="1"/>
+    <rect width="792" height="44" rx="8" fill="#090d15" stroke="url(#borderGrad)" stroke-width="1.2"/>
     
-    <text x="16" y="25" font-size="11" font-weight="700" fill="var(--gold-bright)">TECH STACK:</text>
+    <text x="14" y="26" font-size="10.5" font-weight="800" fill="var(--gold-bright)" letter-spacing="0.5">TECH STACK:</text>
     
-    <g transform="translate(105, 12)">
-      <!-- Tags Tecnológicas em Pílulas -->
+    <g transform="translate(100, 12)">
+      <!-- Tags Tecnológicas em Pílulas Estilizadas -->
       <g transform="translate(0, 0)">
-        <rect width="72" height="20" rx="4" fill="#1e293b" />
-        <text x="36" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">SCADA/SDCD</text>
+        <rect width="72" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="36" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">SCADA/SDCD</text>
       </g>
       <g transform="translate(78, 0)">
-        <rect width="52" height="20" rx="4" fill="#1e293b" />
-        <text x="26" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Python</text>
+        <rect width="52" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="26" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">Python</text>
       </g>
       <g transform="translate(136, 0)">
-        <rect width="38" height="20" rx="4" fill="#1e293b" />
-        <text x="19" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">SQL</text>
+        <rect width="38" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="19" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">SQL</text>
       </g>
       <g transform="translate(180, 0)">
-        <rect width="36" height="20" rx="4" fill="#1e293b" />
-        <text x="18" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">dbt</text>
+        <rect width="36" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="18" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">dbt</text>
       </g>
       <g transform="translate(222, 0)">
-        <rect width="54" height="20" rx="4" fill="#1e293b" />
-        <text x="27" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Dagster</text>
+        <rect width="54" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="27" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">Dagster</text>
       </g>
       <g transform="translate(282, 0)">
-        <rect width="56" height="20" rx="4" fill="#1e293b" />
-        <text x="28" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">DuckDB</text>
+        <rect width="56" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="28" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">DuckDB</text>
       </g>
       <g transform="translate(344, 0)">
-        <rect width="54" height="20" rx="4" fill="#1e293b" />
-        <text x="27" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Parquet</text>
+        <rect width="54" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="27" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">Parquet</text>
       </g>
       <g transform="translate(404, 0)">
-        <rect width="50" height="20" rx="4" fill="#1e293b" />
-        <text x="25" y="14" font-size="9.5" font-weight="600" fill="#f8fafc" text-anchor="middle">Docker</text>
+        <rect width="50" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <text x="25" y="14" font-size="9" font-weight="600" fill="#f8fafc" text-anchor="middle">Docker</text>
       </g>
+      <!-- Destaque Power BI Dourado -->
       <g transform="translate(460, 0)">
-        <rect width="64" height="20" rx="4" fill="#78350f" fill-opacity="0.6" stroke="#f59e0b" stroke-width="0.8"/>
-        <text x="32" y="14" font-size="9.5" font-weight="700" fill="#fde68a" text-anchor="middle">Power BI</text>
+        <rect width="66" height="20" rx="4" fill="#78350f" fill-opacity="0.6" stroke="#f59e0b" stroke-width="1"/>
+        <text x="33" y="14" font-size="9" font-weight="700" fill="#fde68a" text-anchor="middle">Power BI</text>
       </g>
-      <g transform="translate(530, 0)">
-        <rect width="145" height="20" rx="4" fill="#161e2e" stroke="#334155" stroke-width="0.8"/>
-        <text x="72" y="14" font-size="9.5" font-weight="600" fill="#94a3b8" text-anchor="middle">Kimball Dimensional Model</text>
+      <!-- Destaque Kimball Model -->
+      <g transform="translate(532, 0)">
+        <rect width="148" height="20" rx="4" fill="#131926" stroke="#334155" stroke-width="0.8"/>
+        <text x="74" y="14" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">Kimball Dimensional Model</text>
       </g>
     </g>
+
+    <!-- Linha Dourada de Varredura da Stack -->
+    <line x1="12" y1="42" x2="780" y2="42" stroke="url(#goldGlow)" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="x1" values="12;700;12" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100;780;100" dur="5s" repeatCount="indefinite"/>
+    </line>
   </g>
 </svg>
