@@ -1,6 +1,6 @@
 # 👋 Olá, eu sou o R. Martins Nàscimento!
 
-### Analista de Dados Industriais & Analytics Engineer (OT/IT)
+### Engenheiro de Dados Industriais & Analytics Engineer (OT/IT)
 *Unindo a robustez do chão de fábrica (SCADA/Sistemas de Processo) com a escalabilidade da TI Moderna (Python, SQL, Dagster/Airflow, DuckDB, Docker)*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Roberton003-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Roberton003)  
