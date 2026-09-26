@@ -1,7 +1,7 @@
 # 👋 Olá, eu sou o R. Martins Nàscimento!
 
-### Engenheiro de Dados Industriais & Analytics Engineer (OT/IT)
-*Unindo a robustez do chão de fábrica (SCADA/Sistemas de Processo) com a escalabilidade da TI Moderna (Python, SQL, Dagster/Airflow, DuckDB, Docker)*
+### Engenheiro de Dados Industriais & Sistemas de IA (OT/IT & Plataforma)
+*Unindo a robustez da operação industrial à escalabilidade de pipelines analíticos e protocolos modernos de IA (Python, SQL, TypeScript, MCP, Dagster, DuckDB, Docker)*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Roberton003-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Roberton003)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-R.%20Martins%20Nàscimento-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/robertoonaascimento8/)  
@@ -21,18 +21,25 @@ No chão de fábrica, aprendi que a qualidade do dado na origem é crítica: um 
 
 ---
 
-## 🛠️ Matriz de Competências (OT/IT Stack)
+## 🛠️ Matriz de Competências (Stack Técnico)
 
-| 🏭 Automação & Campo (OT) | 💻 Engenharia de Dados & Cloud (IT) |
-| :--- | :--- |
-| **Sistemas Supervisórios**: SCADA, SDCD (Process Monitoring) | **Linguagens & Ingestão**: Python (Pandas/Pydantic), SQL Avançado, ETL/ELT |
-| **Protocolos Industriais**: OPC-UA, ModbusTCP | **Orquestração & Data Quality**: Dagster, Apache Airflow, Great Expectations, Pydantic (Data Contracts), Data Modeling (Star Schema) |
-| **Historiadores de Dados**: AVEVA PI System (OSIsoft PI) | **Armazenamento & Nuvem**: DuckDB, Parquet (Lakehouse), PostgreSQL, Google Cloud (GCP/Cloud Run) |
-| **Borda & Dashboards**: Codesys, Node-RED | **Infraestrutura & IaC**: Docker, Terraform, Git, CI/CD |
+| 🏭 Automação & Campo (OT) | 💻 Engenharia de Dados & Analytics | 🤖 Protocolos de IA & Plataforma (Core) |
+| :--- | :--- | :--- |
+| **Sistemas Supervisórios**: SCADA, SDCD | **Linguagens & Processamento**: Python, SQL Avançado, Pandas, Polars | **Protocolos & Agentes**: Model Context Protocol (MCP - stdio/HTTP), Tool Calling seguro |
+| **Protocolos Industriais**: OPC-UA, ModbusTCP | **Orquestração & Governança**: Dagster, Apache Airflow, Great Expectations, Pydantic | **Linguagens & Runtime**: TypeScript, Node.js, Next.js, FastAPI |
+| **Historiadores**: AVEVA PI System (OSIsoft PI) | **Armazenamento Analítico**: DuckDB, Parquet (Lakehouse), PostgreSQL, SQLite (WAL) | **Segurança & Resiliência**: Fail-Closed Fencing, Rate Limiting, Prevenção de Prototype Pollution |
+| **Borda & Lógica**: Codesys, Node-RED | **Modelagem**: Star Schema (Kimball), Feature Store | **Deploy & Infraestrutura**: Docker, Kubernetes, Helm Charts, Git CI/CD |
 
 ---
 
 ## 🚀 Projetos em Destaque
+
+### 🌐 [LibreDB Studio: Servidor MCP Oficial (Upstream Contribution)](https://github.com/libredb/libredb-studio)
+*Implementação do servidor oficial Model Context Protocol (MCP) para o LibreDB Studio, viabilizando integração segura entre agentes de IA e múltiplos motores de banco de dados.*
+*   **O que faz**: Adiciona endpoint `/api/mcp` (HTTP) e transporte local via stdio com ferramentas de inspeção de esquemas e execução segura de consultas analíticas (`list_connections`, `inspect_schema`, `run_read_query`).
+*   **Destaque Técnico**: Barreira de execução *fail-closed* contra instruções destrutivas, proteção contra *prototype pollution* (`__proto__`), orçamento estrito de wire (limite de 64KB e teto determinístico de linhas), cancelamento atômico de queries com heartbeat, suporte multi-SO a SQLite WAL somente leitura, suíte completa de testes unitários e de integração, além de empacotamento com Helm Charts e CLI npx.
+*   **Rastreabilidade**: Aceito e integrado na branch principal via [PR #1070](https://github.com/libredb/libredb-studio/pull/1070) (commit [b384395](https://github.com/libredb/libredb-studio/commit/b384395012b70e3f82f1d35cb53b1149762417ca)).
+*   **Stack**: TypeScript, Next.js, Node.js, Model Context Protocol (MCP SDK), SQLite, Docker, Helm, Vitest.
 
 ### 🏎️ [OpenF1 Data Platform (Lakehouse + MLOps)](https://github.com/Roberton003/openf1-data-platform)
 *Plataforma de engenharia de dados para telemetria de Fórmula 1 em alta frequência — Arquitetura Medalhão serverless sobre Parquet e DuckDB.*
